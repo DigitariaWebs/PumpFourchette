@@ -1,10 +1,11 @@
 import Header from "@/components/layout/Header"
+import HeroSection from "@/components/sections/HeroSection";
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <h1>Welcome to Next.js!</h1>
+      <HeroSection />
     </div>
   );
 }
