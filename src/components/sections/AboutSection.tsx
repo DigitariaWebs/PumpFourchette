@@ -1,4 +1,7 @@
+"use client"
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function AboutSection() {
   return (
@@ -6,7 +9,13 @@ export default function AboutSection() {
       <div className="w-full max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
           {/* Left Side - Images */}
-          <div className="lg:w-1/2 relative py-4">
+          <motion.div
+            className="lg:w-1/2 relative py-4"
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <div className="relative w-full max-w-md mx-auto">
               {/* The creative layout for the two images */}
               <div className="relative w-full" style={{ height: "550px" }}>
@@ -35,9 +44,15 @@ export default function AboutSection() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* Right Side - Content */}
-          <div className="lg:w-1/2">
+          <motion.div
+            className="lg:w-1/2"
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <p
               className="text-lg font-normal leading-[27px] text-[var(--color-text-muted)] mb-2"
               style={{ fontFamily: "Miniver" }}
@@ -79,7 +94,7 @@ export default function AboutSection() {
               élégante et chaleureuse, fidèle à notre passion pour la qualité et
               l&apos;authenticité.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
