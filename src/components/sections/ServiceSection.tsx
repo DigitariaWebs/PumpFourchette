@@ -104,7 +104,7 @@ const ServiceSection: React.FC = () => {
                   fontFamily: "Gabarito",
                 }}
               >
-                Les meilleure recette pour vos moments à savourer
+                Les meilleures recettes pour vos moments à savourer
               </h2>
             </div>
           </div>
