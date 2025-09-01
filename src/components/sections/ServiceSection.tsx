@@ -40,7 +40,7 @@ const ServiceSection: React.FC = () => {
             className="text-[32px] sm:text-[40px] lg:text-[48px] font-plus-jakarta font-bold leading-tight lg:leading-[61px] mb-6"
             style={{ color: "var(--color-brand)" }}
           >
-            Pump Fourchette, partout où l'appétit vous mène
+            Pump Fourchette, partout où l&apos;appétit vous mène
           </h2>
           <p className="font-bold text-sm py-2 rounded-[18px] text-amber-700 transition-colors mb-12">
             Des repas qui marquent vos plus beaux souvenirs

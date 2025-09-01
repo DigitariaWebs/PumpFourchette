@@ -30,7 +30,7 @@ const TestimonialsSection: React.FC = () => {
         alt="Star"
         width={20}
         height={20}
-        className="w-5 h-5"
+        className={`w-5 h-5 ${index < rating ? 'opacity-100' : 'opacity-30'}`}
       />
     ));
   };
@@ -166,7 +166,7 @@ const TestimonialsSection: React.FC = () => {
                   className="text-base font-normal leading-[24px]"
                   style={{ color: "var(--color-brand)", fontFamily: "Inter" }}
                 >
-                  Profitez d'une dinde festive, tendre et savoureuse, préparée
+                  Profitez d&apos;une dinde festive, tendre et savoureuse, préparée
                   avec des ingrédients frais pour régaler toute la famille.
                 </p>
               </div>

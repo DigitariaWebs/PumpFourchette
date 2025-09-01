@@ -156,7 +156,7 @@ const FaqSection: React.FC = () => {
             className="text-lg mb-6"
             style={{ color: 'var(--color-text-muted)' }}
           >
-            Vous n'avez pas trouvé la réponse à votre question ?
+            Vous n&apos;avez pas trouvé la réponse à votre question ?
           </p>
           <button
             className="inline-flex items-center px-8 py-4 rounded-full font-plus-jakarta font-semibold text-white transition-all duration-300 hover:shadow-lg transform hover:scale-105 cursor-pointer"
