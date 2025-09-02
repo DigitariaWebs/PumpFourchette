@@ -18,7 +18,7 @@ export default function Footer() {
         <hr className="border-t border-[color:var(--color-brand)] mb-8" />
         {/* Newsletter Section */}
         <div className="flex flex-col lg:flex-row justify-end items-center gap-4 mb-12">
-          <div className="flex items-center border border-[#e7e8e9] rounded-lg p-2 w-full lg:w-auto lg:min-w-[400px]">
+          <div className="flex items-center border border-[#e7e8e9] rounded-lg  w-full lg:w-auto lg:min-w-[400px] focus-within:border-[color:var(--color-brand)]">
             <Mail className="w-6 h-6 ml-2" />
             <input
               type="email"
@@ -31,10 +31,10 @@ export default function Footer() {
           </div>
           <button
             onClick={handleEmailSubmit}
-            className="bg-[color:var(--color-brand)] text-[color:var(--color-text)] font-medium text-base px-7 py-2.5 rounded hover:bg-[color:var(--color-accent)] hover:text-white transition-colors cursor-pointer"
+            className="bg-[color:var(--color-brand)] text-[color:var(--color-text)] font-medium text-base px-7 py-2 rounded hover:bg-[color:var(--color-accent)] hover:text-white transition-colors cursor-pointer"
             style={{ fontFamily: "Inter" }}
           >
-            Search
+            Envoyer
           </button>
         </div>
 
@@ -74,7 +74,7 @@ export default function Footer() {
                 Accueil
               </Link>
               <Link
-                href="#services"
+                href="/services"
                 className="block text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
                 style={{ fontFamily: "Inter" }}
               >

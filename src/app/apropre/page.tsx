@@ -13,17 +13,17 @@ export default function Apropre() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[550px]">
             <div className="py-16">
               <p className="text-white/80 text-sm font-light mb-4 tracking-wider">
-                UN PEU -
+                DES SOLUTIONS GOURMANDES
               </p>
               <h2 className="text-4xl lg:text-5xl font-light text-white mb-8 leading-tight">
-                À PROPOS DE NOUS
+                NOS SERVICES
               </h2>
             </div>
             <div className="relative mt-6">
               <Image
                 src="/AboutPage/HeroSection.png"
                 alt="Delicious layered lasagna on a fork"
-                className="w-full h-auto max-w-xl -rotate-35"
+                className="absolute -top-60 -right-50 w-265 h-auto -rotate-60"
                 width={600}
                 height={450}
               />
@@ -49,24 +49,25 @@ export default function Apropre() {
               </span>
               , nous transformons chaque repas en une expérience unique, alliant
               authenticité, convivialité et raffinement. Spécialisés dans les
-              plats festifs, nous mettons un point d&apos;honneur à cuisiner avec des
-              ingrédients frais et de première qualité, en privilégiant les
-              saveurs qui rassemblent. Notre mission est simple : vous libérer
-              du temps en cuisine pour que vous puissiez profiter pleinement de
-              vos moments en famille ou entre amis. Du temps des fêtes aux
-              événements marquants de la vie, nous sommes là pour offrir des
-              plats mémorables qui éveillent les sens et réchauffent les cœurs.
+              plats festifs, nous mettons un point d&apos;honneur à cuisiner
+              avec des ingrédients frais et de première qualité, en privilégiant
+              les saveurs qui rassemblent. Notre mission est simple : vous
+              libérer du temps en cuisine pour que vous puissiez profiter
+              pleinement de vos moments en famille ou entre amis. Du temps des
+              fêtes aux événements marquants de la vie, nous sommes là pour
+              offrir des plats mémorables qui éveillent les sens et réchauffent
+              les cœurs.
             </p>
 
             <p>
-              Au-delà des recettes, Pump Fourchette c&apos;est un savoir-faire et une
-              attention aux détails qui font toute la différence. Chaque étape,
-              de la sélection des produits à la présentation finale, est pensée
-              pour offrir un service à la fois professionnel et chaleureux. Nous
-              croyons que la nourriture a le pouvoir de créer des souvenirs, et
-              c&apos;est pourquoi nous travaillons avec passion pour que chaque
-              bouchée reflète notre engagement envers la qualité et le plaisir
-              de partager.
+              Au-delà des recettes, Pump Fourchette c&apos;est un savoir-faire
+              et une attention aux détails qui font toute la différence. Chaque
+              étape, de la sélection des produits à la présentation finale, est
+              pensée pour offrir un service à la fois professionnel et
+              chaleureux. Nous croyons que la nourriture a le pouvoir de créer
+              des souvenirs, et c&apos;est pourquoi nous travaillons avec
+              passion pour que chaque bouchée reflète notre engagement envers la
+              qualité et le plaisir de partager.
             </p>
           </div>
         </div>

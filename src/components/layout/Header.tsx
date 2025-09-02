@@ -229,7 +229,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
               À Propos
             </Link>
             <Link
-              href="#services"
+              href="/services"
               className="text-sm font-semibold text-[var(--color-text)] cursor-pointer hover:text-[var(--color-brand)] px-3 py-2 rounded-lg transition-colors duration-200"
             >
               Services
