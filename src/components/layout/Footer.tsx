@@ -1,6 +1,5 @@
 "use client"
 
-import Image from 'next/image';
 import Link from "next/link";
 import { useState } from "react";
 import { Mail, Twitter, Linkedin, Facebook, Instagram } from "lucide-react";
@@ -16,7 +15,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-global-6 py-12 lg:py-16">
       <div className="w-full max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
-        <hr className="border-t-2 border-[color:var(--color-brand)] mb-8" />
+        <hr className="border-t border-[color:var(--color-brand)] mb-8" />
         {/* Newsletter Section */}
         <div className="flex flex-col lg:flex-row justify-end items-center gap-4 mb-12">
           <div className="flex items-center border border-[#e7e8e9] rounded-lg p-2 w-full lg:w-auto lg:min-w-[400px]">
@@ -40,9 +39,9 @@ export default function Footer() {
         </div>
 
         {/* Footer Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 mb-8">
           {/* Company Info */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-2">
             <h3
               className="text-[27px] font-bold leading-[34px] text-gray-800 mb-4"
               style={{ fontFamily: "Inter" }}
@@ -69,28 +68,28 @@ export default function Footer() {
             <div className="space-y-4">
               <Link
                 href="/"
-                className="text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
+                className="block text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
                 style={{ fontFamily: "Inter" }}
               >
                 Accueil
               </Link>
               <Link
                 href="#services"
-                className="text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
+                className="block text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
                 style={{ fontFamily: "Inter" }}
               >
                 Nos Services
               </Link>
               <Link
                 href="#menu"
-                className="text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
+                className="block text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
                 style={{ fontFamily: "Inter" }}
               >
                 Menu
               </Link>
               <Link
                 href="#contact"
-                className="text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
+                className="block text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
                 style={{ fontFamily: "Inter" }}
               >
                 Contact
@@ -109,21 +108,21 @@ export default function Footer() {
             <div className="space-y-4">
               <Link
                 href="#repas-fete"
-                className="text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
+                className="block text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
                 style={{ fontFamily: "Inter" }}
               >
                 Repas de fête
               </Link>
               <Link
                 href="#traiteur"
-                className="text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
+                className="block text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
                 style={{ fontFamily: "Inter" }}
               >
                 Traiteur
               </Link>
               <Link
                 href="#evenements"
-                className="text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
+                className="block text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
                 style={{ fontFamily: "Inter" }}
               >
                 Événements spéciaux
@@ -142,21 +141,21 @@ export default function Footer() {
             <div className="space-y-4">
               <Link
                 href="#faq"
-                className="text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
+                className="block text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
                 style={{ fontFamily: "Inter" }}
               >
                 FAQ
               </Link>
               <Link
                 href="#testimonials"
-                className="text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
+                className="block text-base font-normal leading-5 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
                 style={{ fontFamily: "Inter" }}
               >
                 Témoignages
               </Link>
               <Link
-                href="#about"
-                className="text-base font-normal leading-6 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
+                href="/apropre"
+                className="block text-base font-normal leading-6 text-gray-700 hover:text-[color:var(--color-accent)] cursor-pointer transition-colors"
                 style={{ fontFamily: "Inter" }}
               >
                 À propos
@@ -166,7 +165,7 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="flex flex-col sm:flex-row justify-between items-center pt-8 border-t border-gray-200">
+        <div className="flex flex-col sm:flex-row justify-between items-center pt-8 border-t border-[var(--color-brand)]">
           <p
             className="text-sm font-medium leading-[17px] text-gray-600 mb-4 sm:mb-0"
             style={{ fontFamily: "Inter" }}
