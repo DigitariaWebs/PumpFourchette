@@ -63,7 +63,7 @@ export default function ServiceFeaturesSections() {
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center text-center p-6 hover:shadow-lg rounded-lg cursor-pointer"
+              className="flex flex-col items-center text-center p-6 hover:shadow-lg rounded-lg"
               variants={itemVariants}
               whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
             >

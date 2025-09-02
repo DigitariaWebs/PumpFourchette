@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Link from "next/link";
 
 interface HeaderProps {
   className?: string;
@@ -215,21 +216,36 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
         <div className="flex flex-col lg:flex-row justify-between items-center py-2 sm:py-3 md:py-4">
           {/* Left Navigation */}
           <div className="flex flex-wrap items-center gap-4 lg:gap-8 mb-4 lg:mb-0">
-            <span className="text-sm font-semibold text-[var(--color-text)] cursor-pointer hover:text-[var(--color-brand)] px-3 py-2 rounded-lg transition-colors duration-200">
+            <Link
+              href="/"
+              className="text-sm font-semibold text-[var(--color-text)] cursor-pointer hover:text-[var(--color-brand)] px-3 py-2 rounded-lg transition-colors duration-200"
+            >
               Accueil
-            </span>
-            <span className="text-sm font-semibold text-[var(--color-text)] cursor-pointer hover:text-[var(--color-brand)] px-3 py-2 rounded-lg transition-colors duration-200">
+            </Link>
+            <Link
+              href="#about"
+              className="text-sm font-semibold text-[var(--color-text)] cursor-pointer hover:text-[var(--color-brand)] px-3 py-2 rounded-lg transition-colors duration-200"
+            >
               À Propos
-            </span>
-            <span className="text-sm font-semibold text-[var(--color-text)] cursor-pointer hover:text-[var(--color-brand)] px-3 py-2 rounded-lg transition-colors duration-200">
+            </Link>
+            <Link
+              href="#services"
+              className="text-sm font-semibold text-[var(--color-text)] cursor-pointer hover:text-[var(--color-brand)] px-3 py-2 rounded-lg transition-colors duration-200"
+            >
               Services
-            </span>
-            <span className="text-sm font-semibold text-[var(--color-text)] cursor-pointer hover:text-[var(--color-brand)] px-3 py-2 rounded-lg transition-colors duration-200">
+            </Link>
+            <Link
+              href="#menu"
+              className="text-sm font-semibold text-[var(--color-text)] cursor-pointer hover:text-[var(--color-brand)] px-3 py-2 rounded-lg transition-colors duration-200"
+            >
               Menu
-            </span>
-            <span className="text-sm font-semibold text-[var(--color-text)] cursor-pointer hover:text-[var(--color-brand)] px-3 py-2 rounded-lg transition-colors duration-200">
+            </Link>
+            <Link
+              href="#contact"
+              className="text-sm font-semibold text-[var(--color-text)] cursor-pointer hover:text-[var(--color-brand)] px-3 py-2 rounded-lg transition-colors duration-200"
+            >
               Contact
-            </span>
+            </Link>
           </div>
           {/* Right Action Buttons */}
           <div className="flex items-center gap-2">

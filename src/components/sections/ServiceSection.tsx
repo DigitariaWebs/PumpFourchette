@@ -32,7 +32,7 @@ const ServiceSection: React.FC = () => {
   ];
 
   return (
-    <section className="w-full lg:py-16 py-8">
+    <section id="services" className="w-full lg:py-16 py-8">
       {/* Services Section */}
       <div className="w-full py-20 lg:py-28">
         <div className="w-full max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">

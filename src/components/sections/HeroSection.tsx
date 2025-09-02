@@ -50,15 +50,14 @@ export default function HeroSection() {
             >
               De notre cuisine à votre table, pour toutes vos célébrations
             </motion.h1>
-            <motion.button
-              className="bg-[color:var(--color-brand)] text-[color:var(--color-text)] font-bold text-sm px-5 py-2 rounded-[18px] hover:bg-[color:var(--color-accent)] hover:text-white transition-colors"
-              onClick={() => console.log("CTA clicked")}
+            <motion.p
+              className="inline-block bg-[color:var(--color-brand)] text-[color:var(--color-text)] font-bold text-sm px-5 py-2 rounded-[18px] hover:bg-[color:var(--color-accent)] hover:text-white transition-colors"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               Des repas qui marquent vos plus beaux souvenirs
-            </motion.button>
+            </motion.p>
           </div>
         </div>
       </div>

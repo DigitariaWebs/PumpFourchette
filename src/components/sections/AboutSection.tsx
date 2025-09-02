@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function AboutSection() {
   return (
-    <section className="w-full pb-12 lg:pb-20">
+    <section id="about" className="w-full pb-12 lg:pb-20 scroll-mt-50">
       <div className="w-full max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
           {/* Left Side - Images */}
