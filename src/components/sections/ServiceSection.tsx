@@ -28,6 +28,12 @@ const ServiceSection: React.FC = () => {
       image: '/ServiceSection/img_1_1.png',
       category: 'ÉVENEMENTS',
       title: 'Dindes spécial fêtes'
+    },
+    {
+      id: '4',
+      image: '/ServiceSection/Dinner.jpg',
+      category: 'FRITAILLES',
+      title: 'Fritailles'
     }
   ];
 
@@ -42,10 +48,10 @@ const ServiceSection: React.FC = () => {
           >
             Pump Fourchette, partout où l&apos;appétit vous mène
           </h2>
-          <p className="font-bold text-sm py-2 rounded-[18px] text-amber-700 transition-colors mb-12">
+          <p className="font-bold text-sm py-2 rounded-[18px] text-[color:var(--color-brand-muted)] transition-colors mb-12">
             Des repas qui marquent vos plus beaux souvenirs
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {serviceCards.map((card) => (
               <div
                 key={card.id}
@@ -57,7 +63,7 @@ const ServiceSection: React.FC = () => {
                   alt={card.title}
                   width={358}
                   height={294}
-                  className="w-full h-auto rounded-md"
+                  className="w-full h-[294px] object-cover rounded-md"
                 />
                 <div className="flex flex-col gap-2">
                   <p
@@ -71,7 +77,7 @@ const ServiceSection: React.FC = () => {
                   </p>
                   <h3
                     className="text-[26px] font-plus-jakarta font-normal leading-[33px]"
-                    style={{ color: "var(--color-muted)" }}
+                    style={{ color: "var(--color-text)" }}
                   >
                     {card.title}
                   </h3>
