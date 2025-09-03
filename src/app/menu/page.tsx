@@ -26,7 +26,18 @@ function MenuContent({ searchParams }: MenuPageProps) {
   const menuType = (params?.type as string) || "ecole";
   const menuConfig = getMenuConfig(menuType);
 
-  const categories = ["Menu École", "Salades", "Pita & Hamburger", "Jus", "Desserts", "Poutines", "Entrées"];
+  const categories = [
+    "Menu École",
+    "Pita et Hamburger",
+    "Jus",
+    "Desserts",
+    "Poutine",
+    "Weekend Fritail",
+    "Épices Pump Fourchette",
+    "Saisons des Fêtes",
+    "Kremas",
+    "Plateau Diverses"
+  ];
 
   const handleCategoryClick = (category: string) => {
     let newMenuType = "ecole"; // default
@@ -35,6 +46,22 @@ function MenuContent({ searchParams }: MenuPageProps) {
       newMenuType = "ecole";
     } else if (category === "Desserts") {
       newMenuType = "desserts";
+    } else if (category === "Jus") {
+      newMenuType = "jus";
+    } else if (category === "Poutine") {
+      newMenuType = "poutine";
+    } else if (category === "Pita et Hamburger") {
+      newMenuType = "pitaHamburger";
+    } else if (category === "Weekend Fritail") {
+      newMenuType = "weekendFritail";
+    } else if (category === "Épices Pump Fourchette") {
+      newMenuType = "epices";
+    } else if (category === "Saisons des Fêtes") {
+      newMenuType = "saisonsFetes";
+    } else if (category === "Kremas") {
+      newMenuType = "kremas";
+    } else if (category === "Plateau Diverses") {
+      newMenuType = "plateauDivers";
     }
     // Add more conditions here for other categories when you add them
 
