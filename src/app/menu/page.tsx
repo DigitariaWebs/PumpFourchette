@@ -1,29 +1,16 @@
 "use client";
 
-import React, { use, Suspense } from "react";
+import React, { Suspense } from "react";
 import Image from "next/image";
 import Header from "../../components/layout/Header";
 import Footer from "../../components/layout/Footer";
 import { getMenuConfig } from "../../data/menuData";
 import { useRouter, useSearchParams } from "next/navigation";
 
-interface MenuPageProps {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-}
-
-export default function Menu({ searchParams }: MenuPageProps) {
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <MenuContent searchParams={searchParams} />
-    </Suspense>
-  );
-}
-
-function MenuContent({ searchParams }: MenuPageProps) {
+function MenuContent() {
   const router = useRouter();
-  const currentSearchParams = useSearchParams();
-  const params = use(searchParams);
-  const menuType = (params?.type as string) || "ecole";
+  const searchParams = useSearchParams();
+  const menuType = (searchParams.get("type") as string) || "ecole";
   const menuConfig = getMenuConfig(menuType);
 
   const categories = [
@@ -36,7 +23,7 @@ function MenuContent({ searchParams }: MenuPageProps) {
     "Épices Pump Fourchette",
     "Saisons des Fêtes",
     "Kremas",
-    "Plateau Diverses"
+    "Plateau Diverses",
   ];
 
   const handleCategoryClick = (category: string) => {
@@ -66,7 +53,7 @@ function MenuContent({ searchParams }: MenuPageProps) {
     // Add more conditions here for other categories when you add them
 
     // Update the URL with the new menu type
-    const newSearchParams = new URLSearchParams(currentSearchParams.toString());
+    const newSearchParams = new URLSearchParams(searchParams.toString());
     if (newMenuType === "ecole") {
       newSearchParams.delete("type"); // Remove type param for default
     } else {
@@ -184,5 +171,13 @@ function MenuContent({ searchParams }: MenuPageProps) {
 
       <Footer />
     </>
+  );
+}
+
+export default function Menu() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading menu...</div>}>
+      <MenuContent />
+    </Suspense>
   );
 }
