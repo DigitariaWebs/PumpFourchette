@@ -12,10 +12,10 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[550px]">
             <div className="py-16">
               <p className="text-[color:var(--color-surface)]/80 text-sm font-light mb-4 tracking-wider">
-                UN PEU -
+                DES SOLUTIONS GOURMANDES
               </p>
               <h2 className="text-4xl lg:text-5xl font-light text-[color:var(--color-surface)] mb-8 leading-tight">
-                À PROPOS DE NOUS
+                NOS SERVICES
               </h2>
             </div>
             <div className="relative mt-6">
@@ -117,25 +117,54 @@ export default function ServicesPage() {
           <div className="bg-[color:var(--color-surface)] rounded-lg overflow-hidden shadow-sm">
             <Image
               src="/ServicePage/Dinner.jpg"
-              alt="Fritailles"
+              alt="Weekend Fritailles"
               className="w-full h-48 object-cover"
               width={600}
               height={192}
             />
             <div className="p-6">
               <p className="text-[color:var(--color-brand-muted)] text-xs font-medium tracking-wider mb-2">
-                FRITAILLES
+                WEEKEND FRITAILLES
               </p>
               <h3 className="text-[color:var(--color-text)] text-xl font-semibold mb-3">
-                Fritailles
+                Weekend Fritailles
               </h3>
               <p className="text-[color:var(--color-text-muted)] text-sm mb-6 leading-relaxed">
-                Découvrez nos délicieuses fritailles, croustillantes et
+                Découvrez nos délicieuses weekend fritailles, croustillantes et
                 savoureuses, parfaites pour vos apéritifs ou accompagnements.
               </p>
               <button className="bg-[color:var(--color-brand)] hover:bg-[color:var(--color-brand-muted)] text-[color:var(--color-surface)] px-6 py-2 rounded cursor-pointer">
                 Commander
               </button>
+            </div>
+          </div>
+
+          {/* Card 5 - Centered */}
+          <div className="md:col-span-2 md:mx-auto md:max-w-lg">
+            <div className="bg-[color:var(--color-surface)] rounded-lg overflow-hidden shadow-sm">
+              <Image
+                src="/ServicePage/SpecialEvent.jpg"
+                alt="Événement spéciales"
+                className="w-full h-48 object-cover"
+                width={600}
+                height={192}
+              />
+              <div className="p-6">
+                <p className="text-[color:var(--color-brand-muted)] text-xs font-medium tracking-wider mb-2">
+                  ÉVÉNEMENTS SPÉCIAUX
+                </p>
+                <h3 className="text-[color:var(--color-text)] text-xl font-semibold mb-3">
+                  Événement spéciales
+                </h3>
+                <p className="text-[color:var(--color-text-muted)] text-sm mb-6 leading-relaxed">
+                  Service traiteur pour vos événements spéciaux : mariage,
+                  baptême, fêtes, et bien plus. Des plats raffinés et
+                  personnalisés pour rendre vos moments inoubliables.
+                </p>
+                <button className="bg-[color:var(--color-brand)] hover:bg-[color:var(--color-brand-muted)] text-[color:var(--color-surface)] px-6 py-2 rounded cursor-pointer">
+                  Commander
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -177,7 +206,7 @@ export default function ServicesPage() {
                 <Image
                   className="w-full h-[255px] object-cover rounded-lg"
                   alt="Mask group"
-                  src="/ServicePage/WhiteKid.jpg"
+                  src="/ServicePage/FancyFood.png"
                   width={600}
                   height={255}
                 />

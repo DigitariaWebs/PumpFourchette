@@ -13,10 +13,10 @@ export default function Apropre() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[550px]">
             <div className="py-16">
               <p className="text-white/80 text-sm font-light mb-4 tracking-wider">
-                DES SOLUTIONS GOURMANDES
+                UN PEU -
               </p>
               <h2 className="text-4xl lg:text-5xl font-light text-white mb-8 leading-tight">
-                NOS SERVICES
+                À PROPOS DE NOUS
               </h2>
             </div>
             <div className="relative mt-6">
@@ -91,7 +91,7 @@ export default function Apropre() {
               height={256}
             />
             <Image
-              src="/AboutPage/FamillyDinner.jpg"
+              src="/AboutPage/ChineeseKids.png"
               alt="Family dinner"
               className="w-full h-64 object-cover rounded-lg"
               width={400}
@@ -126,7 +126,7 @@ export default function Apropre() {
               height={256}
             />
             <Image
-              src="/AboutPage/TwoChefs.jpg"
+              src="/AboutPage/BlackFamillyDinner.png"
               alt="Two chefs"
               className="w-full h-64 object-cover rounded-lg"
               width={400}

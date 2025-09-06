@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Mail, Twitter, Linkedin, Facebook, Instagram } from "lucide-react";
+import { Mail, Facebook, Instagram } from "lucide-react";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -173,8 +173,6 @@ export default function Footer() {
             Pump Fourchette 2025.
           </p>
           <div className="flex items-center gap-6">
-            <Twitter className="w-[18px] h-[18px] hover:opacity-80 cursor-pointer transition-opacity" />
-            <Linkedin className="w-6 h-6 hover:opacity-80 cursor-pointer transition-opacity" />
             <Facebook className="w-6 h-6 hover:opacity-80 cursor-pointer transition-opacity" />
             <Instagram className="w-6 h-6 hover:opacity-80 cursor-pointer transition-opacity" />
           </div>
