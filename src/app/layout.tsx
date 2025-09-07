@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Pump Fourchette",
   description: "Restaurant Québécois",
+  icons: {
+    icon: "/FavIcon.png",
+  },
 };
 
 export default function RootLayout({

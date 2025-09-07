@@ -42,12 +42,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 mb-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <h3
-              className="text-[27px] font-bold leading-[34px] text-gray-800 mb-4"
+            <img
+              src="/Logo.png"
+              alt="Pump Fourchette"
+              className="h-12 mb-4 "
               style={{ fontFamily: "Inter" }}
-            >
-              Pump Fourchette
-            </h3>
+            />
             <p
               className="text-base font-normal leading-[28px] text-gray-700"
               style={{ fontFamily: "Inter" }}

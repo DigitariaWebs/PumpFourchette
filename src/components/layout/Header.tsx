@@ -64,9 +64,11 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8 xl:gap-12 w-full lg:w-auto">
               {/* Logo */}
               <div className="flex justify-center lg:justify-start lg:flex-shrink-0">
-                <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-[var(--color-text)] whitespace-nowrap">
-                  Pump Fourchette
-                </h1>
+                <img
+                  src="/Logo.png"
+                  alt="Pump Fourchette"
+                  className="h-8 sm:h-10 md:h-12 w-auto mr-5"
+                />
               </div>
 
               {/* Search Bar */}
